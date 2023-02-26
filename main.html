@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-
 <html>
+    <head> 
+    </head>
+    <body>
+        <div id="browser-info"></div>
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
+        <script>
+            let browserInfo = document.getElementById("browser-info");
+            let browser = navigator.userAgent;
+            let browserName = navigator.appName;
+            let version = navigator.appVersion;
+            browserInfo.innerHTML = "You are using " + browserName + " version " + version;
+        </script>
+    </body>
 </html>
